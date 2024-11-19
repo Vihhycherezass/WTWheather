@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTWeather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header__logo"><a href="index.html"><img class="header__logo__icon" src="/src/img/logo.png" alt=""></a>
+            </div>
+            <ul class="header__list">
+                <li class=" "><a class="header__list_item page-active" href="index.html">Home</a></li>
+                <li class=" "><a class="header__list_item " href="about-us.html">About us</a></li>
+                <li class=" "><a class="header__list_item " href="pricing.html">Pricing</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="slogan">
+                <h1>The most mathematical weather forecast ever</h1>
+            </div>
+            <div class="select-block">
+                <h2 class="select-block__text">Choose your city</h2>
+                <div class="select__interactive">
+                    <span class="select-city">
+                        <select name="" id="select">
+                            <option value="none" selected disabled hidden>Choose your city</option>
+                            <option value="moscow">Moscow</opton>
+                            <option value="krasnoyarsk">Krasnoyarsk</opton>
+                            <option value="vladivostok">Vladivostok</opton>
+                            <option value="chita">Chita</opton>
+                            <option value="borzya">Borzya</opton>
+                            <option value="karymskoe">Karymskoe</option>
+                            <option value="irkutsk">Irkutsk</option>
+                        </select>
+                        <svg height="16" width="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 512C114.625 512 0 397.375 0 256S114.625 0 256 0s256 114.625 256 256-114.625 256-256 256zm0-448C149.969 64 64 149.969 64 256s85.969 192 192 192c106.03 0 192-85.969 192-192S362.031 64 256 64zm0 320c-70.688 0-128-57.312-128-128s57.312-128 128-128 128 57.312 128 128-57.312 128-128 128z" />
+                        </svg>
+                </div>
+                <button class="btn btn-3d confirm-select__button" id="confirm-select__button">Confirm</button>
+            </div>
+            <div class="forecast">
+                <div class="temperature-block">
+                    <span class="temperature">-0.2°C</span>
+                    <p class="cur-temp">Current temperature</p>
+                </div>
+                <div class="other-forecasts">
+                    <div class="forecast_left-bar bar">
+                        <h2>Precipitation</h2>
+                        <p class="weather-data relativeHumidity">Relative Humidity: </p>
+                        <p class="weather-data dewpoint">Dewpoint: </p>
+                        <p class="weather-data apparent-temperature">Apparent Temperature: </p>
+                        <p class="weather-data visibility">Visibility: </p>
+                        <p class="weather-data wind-speed">Wind Speed: </p>
+                    </div>
+                    <div class="forecast_right-bar bar">
+                        <h2>Other forecasts</h2>
+                        <p class="weather-data precipitation-probability">Precipitation Probability: </p>
+                        <p class="weather-data rain">Rain: </p>
+                        <p class="weather-data showers">Showers: </p>
+                        <p class="weather-data snowfall">Snowfall: </p>
+                        <p class="weather-data snow-depth">Snow depth: </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>© 2025 WTWeather</span>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
